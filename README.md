@@ -23,12 +23,12 @@ The dataset includes ego‑vehicle video, obstacle‑interaction events, control
 
 ```
 .
-├── pilotnet_example.py
+├── pilotnet_example.ipynb
 ├── prepare_pilotnet_database.py
 └── README.md
 ```
 
-### `pilotnet_example.py`
+### `pilotnet_example.ipynb`
 An end‑to‑end example showing how to:
 
 - Load the processed ANAID value‑added dataset  
@@ -52,32 +52,8 @@ The pipeline includes:
 - Steering/control signal formatting  
 - Dataset structuring for deep learning workflows  
 
-The resulting dataset is used directly by `pilotnet_example.py`.
+The resulting dataset is used directly by `pilotnet_example.ipynb`.
 
----
-
-## 🚀 Getting Started
-
-### 1. Download the ANAID dataset
-
-```bash
-kaggle datasets download -d mgarciafernandez/anaid-autonomous-naturalistic-driving
-unzip anaid-autonomous-naturalistic-driving.zip
-```
-
-### 2. Prepare the PilotNet‑ready dataset
-
-```bash
-python prepare_pilotnet_database.py     --input <path_to_raw_dataset>     --output <path_to_processed_dataset>
-```
-
-### 3. Train PilotNet using ANAID
-
-```bash
-python pilotnet_example.py     --data <path_to_processed_dataset>
-```
-
----
 
 ## 🧠 About PilotNet
 
